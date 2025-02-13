@@ -26,7 +26,6 @@ import AuthRequired from './Components/Authentication/AuthRequired';
 
 
 function App() {
-
   return (
     <AuthProvider>
     <main>
@@ -37,7 +36,6 @@ function App() {
           <Route path="/edit-room/:roomId" element={<EditRoom />} />
           <Route path="/existing-rooms" element={<ExistingRooms />} />
           <Route path="/add-room" element={<AddRoom />} />
-
           <Route path="/book-room/:roomId" element={<AuthRequired>< CheckOut /></AuthRequired>} />
           <Route path="/booking-success" element={<BookingSuccess />} />
           <Route path="/browse-all-rooms" element={<RoomList />} />
